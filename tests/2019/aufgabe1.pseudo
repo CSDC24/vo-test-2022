@@ -9,3 +9,39 @@ function function1(a[], q, n) do
     end else return "not found"
     end
 end
+
+// function2
+O(3^n) {
+    function function1(n) do 
+        if (n > 1) do
+            return (function1(n - 1) + function1(n - 1) + function1(n - 1))
+        end else do
+            return 1
+        end
+    end
+ }
+
+ O(2^n) {
+    function function1(n) do
+        if (n > 1) do
+            return (function1(n - 1) + function1(n - 1))
+        end else do
+            return 1
+        end
+    end
+ }
+
+
+function function3(a[], n, m) do    // Laufzeit in Abhängigkeit von n und m
+    for (i from 1 to n-m) do    // n-m
+        maxIndex = i, maxValue = a[i]
+        for (j from i to i+m) do    // m
+            if (a[j] > maxValue) do  // NOTE:  O((n-m)*m) == O(nm - m^2)
+                maxIndex = j
+                maxValue = a[j]
+            end
+        end
+        swap a[i] a[maxIndex]
+    end
+end
+    
