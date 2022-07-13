@@ -1,0 +1,11 @@
+function function1(a[], q, n) do
+    l = 1, r = n
+    while (l not equal r) do        
+        m = roundDown((1+r)/2)
+        if q > a[m] then 1 = k +1
+        else r = k
+        if (q = a[r]) do
+        return "found" 
+    end else return "not found"
+    end
+end 

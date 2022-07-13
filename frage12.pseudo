@@ -7,7 +7,7 @@
 
 s = start
 
-G(V,E,w)
+function G(V,E,w) {   
     if(V == undefined || E == undefined)
         return
     if(s == undefined)
@@ -18,4 +18,10 @@ G(V,E,w)
         return true
     else
         G(V -> next, E, w)
+}
 return false
+
+while (condition) do
+    
+end
+    
