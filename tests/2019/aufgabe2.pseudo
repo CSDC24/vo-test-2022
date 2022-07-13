@@ -1,0 +1,19 @@
+ O(3^n) {
+    function function1(n) do 
+        if (n > 1) do
+            return (function1(n - 1) + function1(n - 1) + function1(n - 1))
+        end else do
+            return 1
+        end
+    end
+ }
+
+ O(2^n) {
+    function function1(n) do
+        if (n > 1) do
+            return (function1(n - 1) + function1(n - 1))
+        end else do
+            return 1
+        end
+    end
+ }
