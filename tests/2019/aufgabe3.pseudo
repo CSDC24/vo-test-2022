@@ -1,0 +1,13 @@
+function function3(a[], n, m) do    // Laufzeit in Abhängigkeit von n und m
+    for (i from 1 to n-m) do    // n-m
+        maxIndex = i, maxValue = a[i]
+        for (j from i to i+m) do    // m
+            if (a[j] > maxValue) do  // NOTE:  O((n-m)*m)
+                maxIndex = j
+                maxValue = a[j]
+            end
+        end
+        swap a[i] a[maxIndex]
+    end
+end
+    
