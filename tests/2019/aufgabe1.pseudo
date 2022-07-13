@@ -1,16 +1,15 @@
-function function1(a[], q, n) do
+function function1(a[], q, n) do    // n
     l = 1, r = n
     while (l not equal r) do        
-        m = roundDown((1+r)/2)
-        if q > a[m] then 1 = k +1
-        else r = k
-        if (q = a[r]) do
-        return "found" 
-    end else return "not found"
+        m = roundDown((1 + r) / 2)
+        if q > a[m] then l = m + 1
+        else r = m
+        if (q = a[r]) return "found"
+        else return "not found"
     end
 end
 
-// function2
+// function2    n
 O(3^n) {
     function function1(n) do 
         if (n > 1) do
